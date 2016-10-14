@@ -18,8 +18,8 @@ The JavaScript code can be found in Quiz/WebContent (https://github.com/JosiahDM
 - Originally figured out how to make my own ajax method before switching over to Kris's version. My version at line 452 of
 app.js runs the callback passing the parsed data if it is successful. I can see how passing the XMLHttpRequest is probably more
 flexible, so I ended up using his version.
-- Created a login feature that creates cookies with JavaScript to track the current session (these are very minimal 
-cookies. Not using any real security with the cookies). The login does go through the backend and validates username
+- Created a login feature that creates cookies with JavaScript to track the current session. There are very minimal cookies,  and they are not secure. I just wanted some minimal user login ability. Would be interested in learning more about secure cookies, however. In future apps I'd like to do more with security for this. 
+- The login does go through the backend and validates username
  and password with bcrypt hashed passwords. Invalid logins will show an error message via the Java backend sending back a HTTP 
  status code of 401 Unauthorized. Line app.js line 384 for the logic of the cookie creation. 
 - Made a login event so if the user finishes a quiz while not logged in, they are prompted to login to save score. On login, 
