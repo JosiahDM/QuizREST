@@ -21,7 +21,7 @@ flexible, so I ended up using his version.
 - Created a login feature that creates cookies with JavaScript to track the current session. There are very minimal cookies,  and they are not secure. I just wanted some minimal user login ability. Would be interested in learning more about secure cookies, however. In future apps I'd like to do more with security for this. 
 - The login does go through the backend and validates username
  and password with bcrypt hashed passwords. Invalid logins will show an error message via the Java backend sending back a HTTP 
- status code of 401 Unauthorized. Line app.js line 384 for the logic of the cookie creation. 
+ status code of 401 Unauthorized. View app.js line 384 for the logic of the cookie creation. 
 - Made a login event so if the user finishes a quiz while not logged in, they are prompted to login to save score. On login, 
 the event will be triggered and automatically save their score to the database. Logic for this is at app.js line 137-141, 
 then line 390 where the actual dispatchEvent function happens.
